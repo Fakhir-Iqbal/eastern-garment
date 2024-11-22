@@ -1,6 +1,6 @@
 import "./globals.css";
-import { Nav } from "@/components/Nav";
 import Footer from "@/components/Footer";
+import Nav from "@/components/Nav";
 
 export const metadata = {
   title: "Eastern-Garment",
