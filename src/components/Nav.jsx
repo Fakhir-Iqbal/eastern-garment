@@ -1,18 +1,19 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { MdOutlineNavigateNext, MdSearch } from "react-icons/md"; // Updated imports
+import { MdOutlineNavigateNext } from "react-icons/md";
 
 const NavItem = ({ href, label, isMobile }) => (
-    <a
+    <Link
         href={href}
-        className={`text-gray-600 hover:text-black font-bold ${isMobile ? '' : 'text-sm'}`}
+        className={`text-gray-600 hover:text-black font-medium ${isMobile ? '' : 'text-sm'}`}
     >
         <div className={`flex justify-between mt-5 md:mt-0 ${isMobile ? 'w-full' : ''}`}>
             {label}
             {isMobile && <MdOutlineNavigateNext className='h-7 w-7 text-gray-600' />}
         </div>
-    </a>
+    </Link>
 );
 
 const MobileMenuButton = ({ isOpen, toggleMenu }) => (
@@ -33,27 +34,20 @@ export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
 
-    // Toggle menu and close search when menu opens
     const toggleMenu = () => {
         setIsOpen(!isOpen);
-        if (isSearchOpen) setIsSearchOpen(false); // Close search when menu is toggled
-    };
-
-    // Toggle search and close menu when search icon is clicked
-    const toggleSearch = () => {
-        setIsSearchOpen(!isSearchOpen);
-        if (isOpen) setIsOpen(false); // Close menu when search is toggled
+        if (isSearchOpen) setIsSearchOpen(false);
     };
 
     return (
-        <nav className="p-7">
+        <nav className="p-5">
             <div className="max-w-screen-xl mx-auto flex items-center justify-between">
                 {/* Logo */}
                 <div className="flex items-center">
                     <img
-                        src="/logo.png" // Replace with your logo's path
+                        src="/logo.png"
                         alt="Eastern Garments Logo"
-                        className="h-10 md:h-12" // Adjust the size as needed
+                        className="h-10 md:h-12"
                     />
                 </div>
 
@@ -63,22 +57,18 @@ export default function Nav() {
                 </div>
 
                 {/* Menu items for desktop and tablet */}
-                <div className="hidden md:flex space-x-8 items-center">
+                <div className="hidden md:flex space-x-5 items-center">
                     <NavItem href="#" label="Home" />
                     <NavItem href="#" label="About" />
                     <NavItem href="#" label="Expertise" />
                     <NavItem href="#" label="Sustainability" />
                     <NavItem href="#" label="Quality" />
+                    <NavItem href="#" label="Plan & Activities" />
+                    <NavItem href="#" label="Digital Studio" />
+                    <NavItem href="#" label="Accrediation" />
                     <NavItem href="#" label="Contact us" />
                 </div>
 
-                {/* Search Icon for Desktop */}
-                <div className="hidden md:flex items-center">
-                    <button onClick={toggleSearch} className="text-gray-600 hover:text-black">
-                        <MdSearch className="h-6 w-6" />
-                    </button>
-                    {/* Add search bar or functionality here if needed */}
-                </div>
             </div>
 
             {/* Mobile menu */}
@@ -99,15 +89,14 @@ export default function Nav() {
                     <hr />
                     <NavItem href="#" label="Quality" isMobile />
                     <hr />
+                    <NavItem href="#" label="Plan & Activities" isMobile />
+                    <hr />
+                    <NavItem href="#" label="Digital Studio" isMobile />
+                    <hr />
+                    <NavItem href="#" label="Accrediation" isMobile />
+                    <hr />
                     <NavItem href="#" label="Contact us" isMobile />
                 </div>
-            </div>
-
-            {/* Mobile Search Icon */}
-            <div className={`md:hidden fixed top-4 right-4 z-50 ${isOpen ? 'block' : 'hidden'}`}>
-                <button onClick={toggleSearch} className="text-gray-600 hover:text-black">
-                    <MdSearch className="h-6 w-6" />
-                </button>
             </div>
         </nav>
     );

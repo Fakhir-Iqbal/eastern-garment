@@ -1,10 +1,10 @@
 import React from 'react'
-import { HeroParallaxDemo } from '@/components/HeroSection'
+import Home from './Home/page'
 
 const page = () => {
   return (
     <>
-      <HeroParallaxDemo/>
+      <Home/>
     </>
   )
 }
