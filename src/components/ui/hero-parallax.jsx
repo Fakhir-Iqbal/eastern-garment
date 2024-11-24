@@ -27,7 +27,7 @@ export const HeroParallax = ({
   return (
     (<div
       ref={ref}
-      className="h-[185vh] py-10 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      className="h-auto py-10 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Header />
       <motion.div
         style={{
@@ -43,7 +43,7 @@ export const HeroParallax = ({
           ))}
         </motion.div>
         <motion.div className="flex flex-row  mb-7 space-x-7 ">
-        {secondRow.map((product) => (
+          {secondRow.map((product) => (
             <ProductCard product={product} translate={translateXReverse} key={product.title} />
           ))}
         </motion.div>
@@ -61,8 +61,8 @@ export const Header = () => {
   return (
     (<div
       className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-3xl md:text-7xl font-bold dark:text-white">
-      Crafting Excellence in <br/> Textiles & Apparel for <br/> a Global Audience
+      <h1 className="text-4xl md:text-7xl font-bold dark:text-white">
+        Crafting Excellence in <br /> Textiles & Apparel for <br /> a Global Audience
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
         We are a next generation global manufacturer and exporter of
