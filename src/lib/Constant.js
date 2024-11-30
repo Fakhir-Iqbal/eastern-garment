@@ -125,3 +125,56 @@ export const OurDivisonCardData = [
         image: '/embellishment.jpg',
     },
 ];
+
+
+export const testimonialsCardData = [
+  {
+    quote:
+      "Our knitting units produce single knit, double knit, 2-end and 3-end fleece, single knit jacquards, auto and engineered stripes, Single knit circular machines from 17” to 30” diameter (all convertible to fleece), double knits pattern machines, flat knits including plain and jacquard, wide range of textures from 14 gauge to 28 gauge.",
+    name: "KNITTING",
+    designation: "Creating fabric by looping :",
+    src: "/expertiesImages/cutting.jpg",
+  },
+  {
+    quote:
+      "Eastern garments holds a production capacity of 20 metric tons per day for cotton and 5 metric tons for synthetics. We possess high capacity Sclavos, Brazoli and Fongs dyeing machines capable of handling up to 2200 lbs. per batch. We possess both air flow and water flow machines. We have exceptional shade-band continuity with minimum number of batches per year and have a state of the art and fully equipped lab support. Perfect colors are achieved through color prediction and color correction technology by Data color spectrophotometers.",
+    name: "DYEING",
+    designation: "Coloring fabric with dye :",
+    src: "/expertiesImages/deying.jpg",
+  },
+  {
+    quote:
+      "Eastern garments has a proficient division that functions to master the process for the selection of fabrics for the various style or line of garments. The same style is frequently produced in more than one fabric with extreme attention to detail and proficiency to produce exceptional quality textile products.",
+    name: "FABRICATION",
+    designation: "Manufacturing or assembling materials :",
+    src: "/expertiesImages/fabrication.jpg",
+  },
+  {
+    quote:
+      "Our knitting units produce single knit, double knit, 2-end and 3-end fleece, single knit jacquards, auto and engineered stripes, Single knit circular machines from 17” to 30” diameter (all convertible to fleece), double knits pattern machines, flat knits including plain and jacquard, wide range of textures from 14 gauge to 28 gauge.",
+    name: "CUTTING",
+    designation: "Dividing fabric into pieces :",
+    src: "/expertiesImages/cutting.jpg",
+  },
+  {
+    quote:
+      "Eastern Garments sewing department is equipped with cutting-edge electronic technology and the equipment that is required to produce high quality consumer goods. Our switch track garment-handling system is functioned to increase the maximum rate of production and to decrease startup and cycle times. We guarantee utmost level of productivity and efficiency through our hourly production monitoring system. Our sewing production unit is designed to handle assorted articles from very small to very large product line with maximum flexibility in order size to its optimum capacity.",
+    name: "SEWING",
+    designation: "Joining fabric with stitches :",
+    src: "/expertiesImages/sewing.jpg",
+  },
+  {
+    quote:
+      "Our Washing facility is equipped with state-of-the-art laundry equipped with the latest machines, and for various washing effects.The facility is capable of normal garment washing, Resin, Coating, Baking, Pigment Dyeing, Garment Dyeing, Water-Saving Bleach Processes, Fading Methods, Randomized Washes, and Plenty of Other Techniques.",
+    name: "GARMENT DYEING",
+    designation: "Coloring completed garments :",
+    src: "/expertiesImages/garmentdyeing.jpg",
+  },
+  {
+    quote:
+      "Eastern garments have highly developed technology in the field of embellishment. We are the pioneer of laser-cutting technology for tackle-twill, felt and chenille applique decorations in Pakistan. We are capable of successfully handling hundreds of SKUs per season with absolute precision and control. We also provide in-house digitizing and development expertise at our Design Head Quarters. We possess embroidery, circular printing, heat transfers, table printing facilities.",
+    name: "EMBELLISHMENT",
+    designation: "Decorating with added details :",
+    src: "/expertiesImages/embellishment.jpg",
+  },
+];

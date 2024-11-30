@@ -4,6 +4,18 @@ import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { MdOutlineNavigateNext } from "react-icons/md";
 
+const navItems = [
+    { href: "/", label: "Home" },
+    { href: "/About", label: "About" },
+    { href: "/Experties", label: "Expertise" },
+    { href: "#", label: "Sustainability" },
+    { href: "#", label: "Quality" },
+    { href: "#", label: "Plan & Activities" },
+    { href: "#", label: "Digital Studio" },
+    { href: "#", label: "Accrediation" },
+    { href: "#", label: "Contact us" },
+];
+
 const NavItem = ({ href, label, isMobile }) => (
     <Link
         href={href}
@@ -58,15 +70,9 @@ export default function Nav() {
 
                 {/* Menu items for desktop and tablet */}
                 <div className="hidden md:flex space-x-5 items-center">
-                    <NavItem href="#" label="Home" />
-                    <NavItem href="#" label="About" />
-                    <NavItem href="#" label="Expertise" />
-                    <NavItem href="#" label="Sustainability" />
-                    <NavItem href="#" label="Quality" />
-                    <NavItem href="#" label="Plan & Activities" />
-                    <NavItem href="#" label="Digital Studio" />
-                    <NavItem href="#" label="Accrediation" />
-                    <NavItem href="#" label="Contact us" />
+                    {navItems.map((item, index) => (
+                        <NavItem key={index} href={item.href} label={item.label} />
+                    ))}
                 </div>
 
             </div>
@@ -79,23 +85,12 @@ export default function Nav() {
                     <MobileMenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
                 </div>
                 <div className="space-y-4 pt-8 px-6">
-                    <NavItem href="#" label="Home" isMobile />
-                    <hr />
-                    <NavItem href="#" label="About" isMobile />
-                    <hr />
-                    <NavItem href="#" label="Expertise" isMobile />
-                    <hr />
-                    <NavItem href="#" label="Sustainability" isMobile />
-                    <hr />
-                    <NavItem href="#" label="Quality" isMobile />
-                    <hr />
-                    <NavItem href="#" label="Plan & Activities" isMobile />
-                    <hr />
-                    <NavItem href="#" label="Digital Studio" isMobile />
-                    <hr />
-                    <NavItem href="#" label="Accrediation" isMobile />
-                    <hr />
-                    <NavItem href="#" label="Contact us" isMobile />
+                    {navItems.map((item, index) => (
+                        <div key={index} >
+                            <NavItem href={item.href} label={item.label} />
+                            <hr className='mt-5' />
+                        </div>
+                    ))}
                 </div>
             </div>
         </nav>
