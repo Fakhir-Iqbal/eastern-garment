@@ -1,8 +1,8 @@
 import React from 'react'
+import Image from 'next/image';
 import { HeroParallax } from '@/components/ui/hero-parallax'
 import { HeroSectionProductsData, HeroBrandData, OurDivisonCardData } from "@/lib/Constant";
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
-import Image from 'next/image';
 
 
 const Home = () => {
