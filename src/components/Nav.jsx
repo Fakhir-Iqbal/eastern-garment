@@ -8,7 +8,7 @@ const navItems = [
     { href: "/", label: "Home" },
     { href: "/About", label: "About" },
     { href: "/Experties", label: "Expertise" },
-    { href: "#", label: "Sustainability" },
+    { href: "/Sustainability", label: "Sustainability" },
     { href: "#", label: "Quality" },
     { href: "#", label: "Plan & Activities" },
     { href: "#", label: "Digital Studio" },

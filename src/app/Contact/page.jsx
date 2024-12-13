@@ -4,7 +4,7 @@ export default function Contact() {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto py-20 gap-5 md:gap-0" >
             <div className="px-5" >
-                <h1 className="text-5xl md:text-8xl font-bold" >FEEL FREE TO CONTACT US</h1>
+                <h1 className="text-5xl md:text-8xl font-bold italic" >FEEL FREE TO CONTACT US</h1>
                 <p className="mt-5" ><span className="font-bold italic" >Address: </span>B-58, S.I.T.E. Karachi, Pakistan</p>
                 <p><span className="font-bold italic" >Phone: </span>(92-21) 111-704- 704</p>
                 <p><span className="font-bold italic" >Fax: </span>(92-21) 2561452</p>
@@ -29,7 +29,7 @@ export default function Contact() {
                     ></textarea>
                     <button
                         type="submit"
-                        className="w-full bg-blue-100 py-3 rounded-md font-bold hover:bg-blue-950 hover:text-white transition duration-300"
+                        className="w-full bg-blue-100 py-3 rounded-md font-bold hover:bg-blue-950 hover:text-white transition duration-500"
                     >
                         Send Message
                     </button>
