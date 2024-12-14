@@ -9,10 +9,10 @@ const navItems = [
     { href: "/About", label: "About" },
     { href: "/Experties", label: "Expertise" },
     { href: "/Sustainability", label: "Sustainability" },
-    { href: "#", label: "Quality" },
-    { href: "#", label: "Plan & Activities" },
-    { href: "#", label: "Digital Studio" },
-    { href: "#", label: "Accrediation" },
+    { href: "/Quality", label: "Quality" },
+    { href: "Plan&Activities", label: "Plan & Activities" },
+    { href: "DigitalStudio", label: "Digital Studio" },
+    { href: "Accrediation", label: "Accrediation" },
     { href: "/Contact", label: "Contact us" },
 ];
 

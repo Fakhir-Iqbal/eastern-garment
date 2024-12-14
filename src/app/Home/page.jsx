@@ -10,11 +10,11 @@ const Home = () => {
     <>
       <HeroParallax products={HeroSectionProductsData} />
 
-      <div className='h-[40rem] bg-gradient-to-r from-white via-blue-100 to-blue-200' >
+      <div className='h-auto md:h-[50rem] bg-gradient-to-r from-white via-blue-100 to-blue-200' >
         <div className='container relative' >
           <div className='md:m-20 pt-20 min-w-auto max-w-[720px]' >
-            <h3 className='text-2xl' >Our Partner</h3>
-            <h1 className='text-4xl md:text-7xl font-bold text-blue-950' >WE ARE <br />
+            <h3 className='text-3xl' >Our Partner</h3>
+            <h1 className='text-4xl md:text-9xl font-bold text-blue-950' >WE ARE <br />
               BUILDING <br />
               PARTNERSHIPS</h1>
             <p className='text-sm md:text-md font-semibold' >With a capacity of 1.8 million garments/month, our garments facilities are equipped with the most advanced automated machines and functions capable of producing variety of fashion garments.</p>
@@ -32,8 +32,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='container p-1 md:p-16 text-center' >
-        <h1 className='text-4xl md:text-7xl font-bold text-blue-950' >Our Division</h1>
+      <div className='container p-1 mt-5 md:p-16 text-center' >
+        <h1 className='text-5xl md:text-8xl font-bold text-blue-950' >Our Division</h1>
         <p className='text-sm md:text-md font-semibold' >Our modern infrastructure ensures maximum efficiency and flexibility.</p>
 
 
@@ -72,7 +72,7 @@ const Home = () => {
               <h3 className="text-sm uppercase tracking-wider text-gray-300 mb-2">
                 Eastern Garments
               </h3>
-              <h1 className="text-4xl md:text-7xl font-bold leading-tight">
+              <h1 className="text-4xl md:text-8xl font-bold leading-tight">
                 Innovative, <br />
                 Sustainable, <br />
                 and Ahead <br />
@@ -86,7 +86,7 @@ const Home = () => {
                 title="Eastern Garments"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                className="rounded-lg shadow-lg min-h-72 w-full"
+                className="rounded-lg shadow-lg min-h-96 w-full"
               ></iframe>
             </div>
           </div>

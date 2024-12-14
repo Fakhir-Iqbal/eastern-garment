@@ -133,7 +133,7 @@ export const testimonialsCardData = [
       "Our knitting units produce single knit, double knit, 2-end and 3-end fleece, single knit jacquards, auto and engineered stripes, Single knit circular machines from 17” to 30” diameter (all convertible to fleece), double knits pattern machines, flat knits including plain and jacquard, wide range of textures from 14 gauge to 28 gauge.",
     name: "KNITTING",
     designation: "Creating fabric by looping :",
-    src: "/expertiesImages/cutting.jpg",
+    src: "/expertiesImages/knits.jpg",
   },
   {
     quote:
@@ -178,3 +178,31 @@ export const testimonialsCardData = [
     src: "/expertiesImages/embellishment.jpg",
   },
 ];
+
+
+export const planCardData = [
+  {
+    image: "/eco-friendly.jpg",
+    title: "ENVIRONMENTAL FRIENDLY",
+    description:
+      "Eastern garments cares about nature. We have planned and developed eco-friendly solutions for energy consumption and water conservations in pursuit of global environmental sustainability.",
+  },
+  {
+    image: "/waste-magement.png",
+    title: "WASTE MANAGEMENT SYSTEM",
+    description:
+      "We have a fully functional Treatment Plant for waste water treatment and dyeing facility. We are hopeful to achieve our target to save water and to reduce dyeing waste by working to our full potential.",
+  },
+  {
+    image: "/social-responsiblity.webp",
+    title: "SOCIAL RESPONSIBILITY",
+    description:
+      "We obey international laws and abide by globally accepted code of conduct such as WRAP. We try to maintain equilibrium and have implemented a number of self-generated initiatives:",
+    list: [
+      "Special work arrangement for handicapped persons",
+      "Free transportation for female workers",
+      "Flexible work-arrangements for continuing education",
+    ],
+  },
+];
+

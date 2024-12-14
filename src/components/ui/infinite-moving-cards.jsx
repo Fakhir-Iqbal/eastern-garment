@@ -89,10 +89,10 @@ export const InfiniteMovingCards = ({
               </span> */}
               <Image
                 src={item.brandlogo}
-                height={100}
-                width={100}
+                height={200}
+                width={200}
                 alt={`${item.name} Logo`}
-                className="h-full w-full object-contain rounded-2xl"
+                className="h-full w-full object-contain rounded-2xl contrast-200"
               />
 
               {/* <div className="relative z-20 mt-6 flex flex-row items-center">
