@@ -1,6 +1,7 @@
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
+import Link from "next/link";
 
 export const metadata = {
   title: "Eastern-Garment",
@@ -11,6 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-blue-50" >
+        <div className="text-center bg-blue-950 text-white" >
+          <Link href="mailto:fakhiriqbal52@gmail.com" >Buy Now</Link>
+        </div>
         <Nav/>
         {children}
         <Footer/>

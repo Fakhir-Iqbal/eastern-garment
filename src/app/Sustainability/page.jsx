@@ -1,6 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 
+export const metadata = {
+  title: 'Sustainability | Eastern Garment',
+  description: 'Discover Eastern Garments dedication to sustainability. Learn about our eco-friendly practices, sustainable materials, and efforts to reduce our environmental impact while delivering high-quality fashion solutions.',
+};
+
 export default function Sustainability() {
   return (
     <div className='bg-white'>

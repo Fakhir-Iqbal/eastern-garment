@@ -1,15 +1,17 @@
 import Image from 'next/image'
 import React from 'react'
 
+export const metadata = {
+    title: 'About Us | Eastern Garment',
+    description: 'Learn about Eastern Garments, a leader in the fashion industry, committed to quality, innovation, and sustainability in garment manufacturing and design.',
+};
+
 export default function About() {
     return (
         <>
             <div className="relative">
                 <Image
-                    src="/about-banner.jpg"
-                    height={1000}
-                    width={1000}
-                    alt="aboutBanner"
+                    src="/about-banner.jpg" height={1000} width={1000} alt="aboutBanner"
                     className="w-full h-[85vh] object-cover opacity-30 brightness-50 contrast-200"
                 />
 
@@ -23,15 +25,14 @@ export default function About() {
                     </p>
                 </div>
 
-                <p className="py-5 px-2 md:px-8 max-w-7xl mx-auto text-center">
-                    Eastern Group is a global manufacturer and a trusted name in the field of knit
-                    and woven garments. We use state-of-the-art technology to produce apparel for
-                    men, women, and children. Since establishment in 1976, Eastern has focused on
-                    meeting or exceeding customer requirements in terms of quality, service,
-                    delivery, and overall value.
-                </p>
             </div>
-
+            <p className="py-5 px-2 md:px-8 max-w-7xl mx-auto text-center">
+                Eastern Group is a global manufacturer and a trusted name in the field of knit
+                and woven garments. We use state-of-the-art technology to produce apparel for
+                men, women, and children. Since establishment in 1976, Eastern has focused on
+                meeting or exceeding customer requirements in terms of quality, service,
+                delivery, and overall value.
+            </p>
             <div className="max-w-7xl mx-auto px-4">
                 <div className="p-6 flex flex-col items-center py-10">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-7xl">

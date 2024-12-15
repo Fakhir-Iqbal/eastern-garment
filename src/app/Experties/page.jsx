@@ -3,6 +3,11 @@ import { AnimatedTestimonials } from '@/components/ui/animated-testimonials'
 import { testimonialsCardData } from '@/lib/Constant'
 import Image from 'next/image'
 
+export const metadata = {
+  title: 'Experties | Eastern Garment',
+  description: 'Explore the expertise of Eastern Garments in garment manufacturing, design, and sustainable fashion practices. Learn how our skilled team delivers high-quality solutions for the fashion industry.',
+};
+
 export default function Expertise() {
   return (
     <>
@@ -24,6 +29,7 @@ export default function Expertise() {
             <span className='font-bold' > HBI, Champion, Alternatives, Under Armour, Gear for Sports, 47 Brand, Fanatics, Russell Athletic, Dickies, Carrefour</span>  etc.
           </p>
         </div>
+        
       </div>
       <div className='py-10' >
         {/* <h1 className='text-center text-7xl text-blue-950 font-bold pt-5' >Our Expertise</h1> */}

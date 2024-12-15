@@ -2,6 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import { planCardData } from '@/lib/Constant'
 
+export const metadata = {
+  title: 'Plan & Activities | Eastern Garment',
+  description: 'Explore the strategic plans and ongoing activities of Eastern Garments. Learn how we are shaping the future of the fashion industry through innovative initiatives, sustainability efforts, and community-driven projects.',
+};
+
 
 export default function PlanActivities() {
   return (

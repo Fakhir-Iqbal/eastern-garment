@@ -5,6 +5,11 @@ import { HeroSectionProductsData, HeroBrandData, OurDivisonCardData } from "@/li
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
 
 
+export const metadata = {
+  title: 'Eastern Garment',
+  description: 'Welcome to Eastern Garments, a leading fashion brand committed to delivering high-quality, sustainable, and innovative garment solutions. Discover our range of services, expertise, and products designed to build the future of fashion.',
+};
+
 const Home = () => {
   return (
     <>

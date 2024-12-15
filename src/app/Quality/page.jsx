@@ -2,6 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import { QualityCardData } from '@/lib/Constant'
 
+export const metadata = {
+  title: 'Quality | Eastern Garment',
+  description: 'Discover Eastern Garments commitment to quality through our rigorous processes, sustainable practices, and cutting-edge technology that ensure every product meets the highest industry standards.',
+};
+
 export default function Quality() {
   return (
     <div>

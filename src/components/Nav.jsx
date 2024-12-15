@@ -16,10 +16,11 @@ const navItems = [
     { href: "/Contact", label: "Contact us" },
 ];
 
-const NavItem = ({ href, label, isMobile }) => (
+const NavItem = ({ href, label, isMobile, closeMenu }) => (
     <Link
         href={href}
         className={`text-gray-600 hover:text-black font-medium ${isMobile ? '' : 'text-sm'}`}
+        onClick={closeMenu}
     >
         <div className={`flex justify-between mt-5 lg:mt-0 ${isMobile ? 'w-full' : ''}`}>
             {label}
@@ -51,6 +52,10 @@ export default function Nav() {
         if (isSearchOpen) setIsSearchOpen(false);
     };
 
+    const closeMenu = () => {
+        setIsOpen(false); 
+    };
+
     return (
         <nav className="p-5 border-b-2 border-gray-200">
             <div className="max-w-screen-xl mx-auto flex items-center justify-between">
@@ -71,10 +76,9 @@ export default function Nav() {
                 {/* Menu items for desktop and tablet */}
                 <div className="hidden lg:flex space-x-5 items-center">
                     {navItems.map((item, index) => (
-                        <NavItem key={index} href={item.href} label={item.label} />
+                        <NavItem key={index} href={item.href} label={item.label} isMobile={false} />
                     ))}
                 </div>
-
             </div>
 
             {/* Mobile menu */}
@@ -84,10 +88,10 @@ export default function Nav() {
                 <div className="flex justify-end p-6">
                     <MobileMenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
                 </div>
-                <div className="space-y-4 px-6">
+                <div className="space-y-4 px-6 overflow-y-scroll max-h-screen">
                     {navItems.map((item, index) => (
-                        <div key={index} >
-                            <NavItem href={item.href} label={item.label} />
+                        <div key={index}>
+                            <NavItem href={item.href} label={item.label} isMobile={true} closeMenu={closeMenu} />
                             <hr className='mt-5' />
                         </div>
                     ))}

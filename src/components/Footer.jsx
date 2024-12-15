@@ -39,25 +39,25 @@ const Footer = () => {
           {/* Queries Section */}
           <div>
             <h3 className="text-3xl font-semibold mb-6">Queries</h3>
-            <form className="space-y-4">
+            <form className="space-y-3">
               <input
                 type="email"
                 placeholder="Your email address"
-                className="w-full p-2 rounded-lg text-xs text-black outline-none"
+                className="w-full p-3 rounded-sm text-xs text-black outline-none"
               />
               <input
                 type="text"
                 placeholder="Full Name"
-                className="w-full p-2 rounded-lg text-xs text-black outline-none"
+                className="w-full p-3 rounded-sm text-xs text-black outline-none"
               />
               <textarea
                 placeholder="Message"
                 rows="4"
-                className="w-full p-2 rounded-lg text-xs text-black outline-none resize-none"
+                className="w-full p-3 rounded-sm text-xs text-black outline-none resize-none"
               />
               <button
                 type="submit"
-                className="w-full border-4 border-blue-400 hover:border-blue-600 text-white p-2 rounded-full transition-all duration-300"
+                className="w-full border-4 border-blue-400 hover:border-blue-600 text-white p-2 rounded-sm transition-all duration-300"
               >
                 Send Message
               </button>

@@ -1,10 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
+import ImageCarousel from '@/components/ImageCarousel';
+
+export const metadata = {
+  title: 'Accrediation | Eastern Garment',
+  description: 'Discover the certifications and accreditations that Eastern Garments has earned, demonstrating our commitment to quality, compliance, and industry standards in garment manufacturing.',
+};
 
 export default function Accrediation() {
   return (
     <div>
-
       <div className="relative">
         <Image
           src="/certificate-bg.jpg"
@@ -24,6 +29,8 @@ export default function Accrediation() {
           </p>
         </div>
       </div>
+
+      <ImageCarousel />
 
     </div>
   )

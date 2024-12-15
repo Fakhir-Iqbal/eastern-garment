@@ -1,6 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 
+export const metadata = {
+  title: 'Eastern Digital Studio | Eastern Garment',
+  description: 'Discover how Eastern Garments leverages cutting-edge 3D garment design software like VStitcher and CLO to enhance design workflows and reduce production costs in their digital studio.',
+};
+
 export default function DigitalStudio() {
   return (
     <div>
@@ -11,7 +16,7 @@ export default function DigitalStudio() {
           height={1000}
           width={1000}
           alt="aboutBanner"
-          className="w-full h-[85vh] object-cover opacity-50 brightness-50"
+          className="w-full h-[85vh] object-cover opacity-40 brightness-50"
         />
 
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
@@ -28,7 +33,7 @@ export default function DigitalStudio() {
         </div>
       </div>
 
-      <div className='max-w-7xl mx-auto py-10' >
+      <div className='max-w-7xl mx-auto py-10 p-1' >
         <Image
           src="/studio1.jpg"
           height={1000}
