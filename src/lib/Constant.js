@@ -206,3 +206,31 @@ export const planCardData = [
   },
 ];
 
+
+export const QualityCardData = [
+  {
+    image: "/QualityControl.webp",
+    title: "QUALITY CONTROL",
+    description:
+      "Through a strict regimen of quality checks & controls, we maintain consistency in the quality of raw materials procured, in the quality of our manufacturing work, in packaging, in Shipment & Service etc.",
+  },
+  {
+    image: "/labTest.webp",
+    title: "LAB TESTING",
+    description:
+      "Laboratories are an extremely valuable component of our services and also facilitate the manufacturers – exporters & importers to conduct their business with the least quality risk. Our laboratory service includes.",
+  },
+  {
+    image: "/productionCheck.png",
+    title: "PRE PRODUCTION CHECK",
+    description:
+      "First finished products are checked against buyer’s specifications and a prototype sample. Deviations areidentified and corrected.",
+  },
+  {
+    image: "/FinalInspection.jpg",
+    title: "FINAL INSPECTION",
+    description:
+      "Final Inspection is based on specification of the buyers and it cover criteria such as design/ style, shrinkage, accessories, marking, colors, labeling, material, etc.",
+  },
+];
+
